@@ -1,0 +1,9 @@
+<h1>All Tasks</h1>
+<p>Find me in app/views/tasks/index.html.erb</p>
+<ol>
+  <%@tasks.each do |task|%>
+    <li><%= task.description%>
+      <%= link_to "mostrar", task%>
+    </li>
+  <%end%>
+</ol>
