@@ -9,6 +9,6 @@
     <%= f.number_field :priority%>
 ..</p>
   <p>
-    <%= f.submit%> #railscasts.com videos para hacer cosas en rails
+    <%= f.submit%> 
   </p>
 <%end%>
