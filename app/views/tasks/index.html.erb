@@ -1,10 +1,11 @@
 <h1>All Tasks</h1>
-<p>Find me in app/views/tasks/index.html.erb</p>
 <ol>
   <%@tasks.each do |task|%>
     <li><%= task.description%>
       <%= link_to "mostrar", task%>
       <%= link_to "borrar", task, :method => :delete, :confirm => "Estas seguro?!" %>
+      <a href="http://localhost:3000/tasks/<%=task.id%>/edit"> edit</a> 
     </li>
   <%end%>
 </ol>
+<a href="http://localhost:3000/tasks/new"> Create Task</a>
