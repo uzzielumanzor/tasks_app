@@ -1,4 +1,9 @@
 Tasks::Application.routes.draw do
+  get "sessions/new"
+  root to: "tasks#index"
+  resources :users
+  resources :sessions
+
   #get "tasks/index"
 
   #get "tasks/create"

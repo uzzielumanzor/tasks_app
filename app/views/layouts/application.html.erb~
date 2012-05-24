@@ -12,13 +12,6 @@
     <%= msg%>
   </div>
 <%end%>
-<% if  logged_in?%>
-  <p>logged_in as <%= current_user.email%></p>
-  <% link_to session_path(id:"current"), method: "delete"%>
-<%else%>
-  <%= link_to "create account", new_user_path%>
-  <%= link_to "login", new_session_path%>
-<%end%>
 <%= yield %>
 
 </body>
